@@ -1,3 +1,5 @@
 # dotenv
 .env
 .env*.local
+flow.json
+*.key

@@ -9,8 +9,8 @@
 # Author: Increment Labs
 
 */
-import OracleInterface from "./OracleInterface.cdc"
-import OracleConfig from "./OracleConfig.cdc"
+import "OracleInterface"
+import "OracleConfig"
 
 pub contract PublicPriceOracle {
     /// {OracleAddr: PriceIdentifier}
