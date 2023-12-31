@@ -56,7 +56,9 @@ export default function CWButton({ user, setUser }) {
     }, [loginAttempt])
 
     const logInButton = loggedIn ? (
-        <button onClick={handleLogOut}>Log Out</button>
+        <button onClick={handleLogOut}>Log Out
+        {/* {user.addr.substring(0, 3) + "..." + user.addr.slice(-4)} */}
+        </button>
     ) : (
         <button onClick={handleLogIn}>Log In With Wallet</button>
     );

@@ -9,6 +9,7 @@ transaction(ID: UInt) {
 
     execute {
         // Create a new round
-        self.RoundsBucketResource?.settleRound(id: ID)
+        // self.RoundsBucketResource?.ids
+        var IDsL: @OptionsV2.RoundsBucket.ids <- self.RoundsBucketResource?.ids
     }
 }

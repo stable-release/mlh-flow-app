@@ -32,6 +32,13 @@
 				"testnet": "631e88ae7f1d7c20"
 			}
 		},
+		"MyOracle": {
+			"source": "cadence/contracts/MyOracle.cdc",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"testnet": "4bbd2449d4663a7a"
+			}
+		},
 		"NFTStorefront": {
 			"source": "cadence/contracts/utility/NFTStorefront.cdc",
 			"aliases": {
@@ -59,7 +66,13 @@
 		"Options": {
 			"source": "cadence/contracts/Options.cdc",
 			"aliases": {
-				"testnet": "0x866a9f1e81898147"
+				"testnet": "866a9f1e81898147"
+			}
+		},
+		"OptionsV2": {
+			"source": "cadence/contracts/OptionsV2.cdc",
+			"aliases": {
+				"testnet": "4bbd2449d4663a7a"
 			}
 		},
 		"OracleConfig": {
@@ -108,29 +121,19 @@
 		"mainnet": "access.mainnet.nodes.onflow.org:9000",
 		"testnet": "access.devnet.nodes.onflow.org:9000"
 	},
-	"testSTring": {
-
-	},
 	"deployments": {
 		"emulator": {
 			"default": [
-				"Options"
+				"Options",
+				"OptionsV2"
 			],
 			"increment": [],
 			"utility": []
 		},
 		"testnet": {
-			"testdev2": [
-				"PublicPriceOracle",
-				{
-					"name": "Options",
-					"args": [
-						{
-							"type": "Address",
-							"value": "[203 219 90 123 137 195 200 68]"
-						}
-					]
-				}
+			"testdev3": [
+				"MyOracle",
+				"OptionsV2"
 			]
 		}
 	}

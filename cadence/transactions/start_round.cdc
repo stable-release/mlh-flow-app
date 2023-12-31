@@ -1,11 +1,10 @@
-import "PublicPriceOracle"
-import Options from "../contracts/Options.cdc"
+import OptionsV2 from "../contracts/OptionsV2.cdc"
 
 transaction {
-    let RoundsBucketResource: &Options.RoundsBucket{Options.IRoundsBucket}?
+    let RoundsBucketResource: &OptionsV2.RoundsBucket{OptionsV2.IRoundsBucket}?
 
     prepare(acct: AuthAccount) {
-        self.RoundsBucketResource = acct.borrow<&Options.RoundsBucket{Options.IRoundsBucket}>(from: Options.RoundsBucketStoragePath)
+        self.RoundsBucketResource = acct.borrow<&OptionsV2.RoundsBucket{OptionsV2.IRoundsBucket}>(from: OptionsV2.RoundsBucketStoragePath)
     }
 
     execute {
