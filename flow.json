@@ -1,129 +1,137 @@
 {
-    "contracts": {
-        "FlowToken": {
-            "source": "cadence/contracts/utility/FlowToken.cdc",
-            "aliases": {
-                "emulator": "0ae53cb6e3f42a79",
-                "mainnet": "1654653399040a61",
-                "testnet": "7e60df042a9c0868"
-            }
-        },
-        "FungibleToken": {
-            "source": "cadence/contracts/utility/FungibleToken.cdc",
-            "aliases": {
-                "emulator": "ee82856bf20e2aa6",
-                "mainnet": "f233dcee88fe0abe",
-                "testnet": "9a0766d93b6608b7"
-            }
-        },
-        "FungibleTokenMetadataViews": {
-            "source": "cadence/contracts/utility/FungibleTokenMetadataViews.cdc",
-            "aliases": {
-                "emulator": "ee82856bf20e2aa6",
-                "mainnet": "f233dcee88fe0abe",
-                "testnet": "9a0766d93b6608b7"
-            }
-        },
-        "MetadataViews": {
-            "source": "cadence/contracts/utility/MetadataViews.cdc",
-            "aliases": {
-                "emulator": "f8d6e0586b0a20c7",
-                "mainnet": "1d7e57aa55817448",
-                "testnet": "631e88ae7f1d7c20"
-            }
-        },
-        "NFTStorefront": {
-            "source": "cadence/contracts/utility/NFTStorefront.cdc",
-            "aliases": {
-                "emulator": "f8d6e0586b0a20c7",
-                "mainnet": "4eb8a10cb9f87357",
-                "testnet": "94b06cfca1d8a476"
-            }
-        },
-        "NFTStorefrontV2": {
-            "source": "cadence/contracts/utility/NFTStorefrontV2.cdc",
-            "aliases": {
-                "emulator": "f8d6e0586b0a20c7",
-                "mainnet": "4eb8a10cb9f87357",
-                "testnet": "2d55b98eb200daef"
-            }
-        },
-        "NonFungibleToken": {
-            "source": "cadence/contracts/utility/NonFungibleToken.cdc",
-            "aliases": {
-                "emulator": "f8d6e0586b0a20c7",
-                "mainnet": "1d7e57aa55817448",
-                "testnet": "631e88ae7f1d7c20"
-            }
-        },
-        "Options": {
-            "source": "cadence/contracts/Options.cdc",
-            "aliases": {
-                "testnet": "0x0f61d39c6c83fed5"
-            }
-        },
-        "OracleConfig": {
-            "source": "cadence/contracts/increment/OracleConfig.cdc",
-            "aliases": {
-                "emulator": "e03daebed8ca0615",
-                "mainnet": "cec15c814971c1dc",
-                "testnet": "2a9b59c3e2b72ee0"
-            }
-        },
-        "OracleInterface": {
-            "source": "cadence/contracts/increment/OracleInterface.cdc",
-            "aliases": {
-                "emulator": "e03daebed8ca0615",
-                "mainnet": "cec15c814971c1dc",
-                "testnet": "2a9b59c3e2b72ee0"
-            }
-        },
-        "PublicPriceOracle": {
-            "source": "cadence/contracts/increment/PublicPriceOracle.cdc",
-            "aliases": {
-                "emulator": "e03daebed8ca0615",
-                "mainnet": "ec67451f8a58216a",
-                "testnet": "0f61d39c6c83fed5"
-            }
-        },
-        "RandomBeaconHistory": {
-            "source": "cadence/contracts/utility/RandomBeaconHistory.cdc",
-            "aliases": {
-                "emulator": "f8d6e0586b0a20c7",
-                "mainnet": "e467b9dd11fa00df",
-                "testnet": "8c5303eaa26202d6"
-            }
-        },
-        "ViewResolver": {
-            "source": "cadence/contracts/utility/ViewResolver.cdc",
-            "aliases": {
-                "emulator": "f8d6e0586b0a20c7",
-                "mainnet": "1d7e57aa55817448",
-                "testnet": "631e88ae7f1d7c20"
-            }
-        }
-    },
-    "networks": {
-        "emulator": "127.0.0.1:3569",
-        "mainnet": "access.mainnet.nodes.onflow.org:9000",
-        "testnet": "access.devnet.nodes.onflow.org:9000"
-    },
-    "deployments": {
-        "emulator": {
-            "default": ["Options", "PublicPriceOracle"],
-            "increment": [],
-            "utility": []
-        },
-        "testnet": {
-            "testdev": [
-                "PublicPriceOracle",
-                {
-                    "name": "Options",
-                    "args": [
-                        { "type": "Address", "value": "0xcbdb5a7b89c3c844" }
-                    ]
-                }
-            ]
-        }
-    }
+	"contracts": {
+		"FlowToken": {
+			"source": "cadence/contracts/utility/FlowToken.cdc",
+			"aliases": {
+				"emulator": "0ae53cb6e3f42a79",
+				"mainnet": "1654653399040a61",
+				"testnet": "7e60df042a9c0868"
+			}
+		},
+		"FungibleToken": {
+			"source": "cadence/contracts/utility/FungibleToken.cdc",
+			"aliases": {
+				"emulator": "ee82856bf20e2aa6",
+				"mainnet": "f233dcee88fe0abe",
+				"testnet": "9a0766d93b6608b7"
+			}
+		},
+		"FungibleTokenMetadataViews": {
+			"source": "cadence/contracts/utility/FungibleTokenMetadataViews.cdc",
+			"aliases": {
+				"emulator": "ee82856bf20e2aa6",
+				"mainnet": "f233dcee88fe0abe",
+				"testnet": "9a0766d93b6608b7"
+			}
+		},
+		"MetadataViews": {
+			"source": "cadence/contracts/utility/MetadataViews.cdc",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "1d7e57aa55817448",
+				"testnet": "631e88ae7f1d7c20"
+			}
+		},
+		"NFTStorefront": {
+			"source": "cadence/contracts/utility/NFTStorefront.cdc",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "4eb8a10cb9f87357",
+				"testnet": "94b06cfca1d8a476"
+			}
+		},
+		"NFTStorefrontV2": {
+			"source": "cadence/contracts/utility/NFTStorefrontV2.cdc",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "4eb8a10cb9f87357",
+				"testnet": "2d55b98eb200daef"
+			}
+		},
+		"NonFungibleToken": {
+			"source": "cadence/contracts/utility/NonFungibleToken.cdc",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "1d7e57aa55817448",
+				"testnet": "631e88ae7f1d7c20"
+			}
+		},
+		"Options": {
+			"source": "cadence/contracts/Options.cdc",
+			"aliases": {
+				"testnet": "0x866a9f1e81898147"
+			}
+		},
+		"OracleConfig": {
+			"source": "cadence/contracts/increment/OracleConfig.cdc",
+			"aliases": {
+				"emulator": "e03daebed8ca0615",
+				"mainnet": "cec15c814971c1dc",
+				"testnet": "2a9b59c3e2b72ee0"
+			}
+		},
+		"OracleInterface": {
+			"source": "cadence/contracts/increment/OracleInterface.cdc",
+			"aliases": {
+				"emulator": "e03daebed8ca0615",
+				"mainnet": "cec15c814971c1dc",
+				"testnet": "2a9b59c3e2b72ee0"
+			}
+		},
+		"PublicPriceOracle": {
+			"source": "cadence/contracts/increment/PublicPriceOracle.cdc",
+			"aliases": {
+				"emulator": "e03daebed8ca0615",
+				"mainnet": "ec67451f8a58216a",
+				"testnet": "866a9f1e81898147"
+			}
+		},
+		"RandomBeaconHistory": {
+			"source": "cadence/contracts/utility/RandomBeaconHistory.cdc",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "e467b9dd11fa00df",
+				"testnet": "8c5303eaa26202d6"
+			}
+		},
+		"ViewResolver": {
+			"source": "cadence/contracts/utility/ViewResolver.cdc",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "1d7e57aa55817448",
+				"testnet": "631e88ae7f1d7c20"
+			}
+		}
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"testSTring": {
+
+	},
+	"deployments": {
+		"emulator": {
+			"default": [
+				"Options"
+			],
+			"increment": [],
+			"utility": []
+		},
+		"testnet": {
+			"testdev2": [
+				"PublicPriceOracle",
+				{
+					"name": "Options",
+					"args": [
+						{
+							"type": "Address",
+							"value": "[203 219 90 123 137 195 200 68]"
+						}
+					]
+				}
+			]
+		}
+	}
 }
