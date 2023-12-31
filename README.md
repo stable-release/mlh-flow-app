@@ -1,3 +1,7 @@
+## MLH X WEB3 Hackathon
+
+### Binary Options WebApp
+
 ### 👋 Welcome Flow Developer!
 Welcome to your new Flow project. We've created the basic folder structure you will need to develop your project and provided some examples of contracts and transactions you can modify. We've also added some of the most common contracts, transactions and scripts but feel free to just delete what you don't need. 
 
