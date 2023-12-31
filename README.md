@@ -1,8 +1,8 @@
 ## MLH X WEB3 Hackathon
 
-### Binary Options WebApp
+### 🏛️ Binary Options WebApp
 
-#### Smart Contracts:
+#### 🚀 Smart Contracts:
 
 | Contract Name       | Testnet Address | Testnet Link |
 | ------------- |-------------:| ----------:|
