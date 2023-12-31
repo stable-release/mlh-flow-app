@@ -5,7 +5,7 @@
 #### 🚀 Smart Contracts:
 
 | Contract Name       | Testnet Address | Testnet Link |
-| ------------- |:-------------:| ----------:|
+| ------------- |:-------------:| :----------|
 | MyOracle      | A.4bbd2449d4663a7a.MyOracle | https://testnet.flowdiver.io/contract/A.4bbd2449d4663a7a.MyOracle |
 | OptionsV2      | A.4bbd2449d4663a7a.OptionsV2 | https://testnet.flowdiver.io/contract/A.4bbd2449d4663a7a.OptionsV2 |
 | IncrementFi Price Oracle | A.866a9f1e81898147.PublicPriceOracle | https://testnet.flowdiver.io/contract/A.866a9f1e81898147.PublicPriceOracle |
