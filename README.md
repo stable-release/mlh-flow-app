@@ -2,6 +2,16 @@
 
 ### Binary Options WebApp
 
+#### Smart Contracts:
+
+| Contract Name       | Testnet Address | Testnet Link |
+| ------------- |-------------:| ----------:|
+| MyOracle      | A.4bbd2449d4663a7a.MyOracle | https://testnet.flowdiver.io/contract/A.4bbd2449d4663a7a.MyOracle |
+| OptionsV2      | A.4bbd2449d4663a7a.OptionsV2 | https://testnet.flowdiver.io/contract/A.4bbd2449d4663a7a.OptionsV2 |
+| IncrementFi Price Oracle | A.866a9f1e81898147.PublicPriceOracle | https://testnet.flowdiver.io/contract/A.866a9f1e81898147.PublicPriceOracle |
+| Options (v1) | A.866a9f1e81898147.Options | https://testnet.flowdiver.io/contract/A.866a9f1e81898147.Options |
+
+
 ### 👋 Welcome Flow Developer!
 Welcome to your new Flow project. We've created the basic folder structure you will need to develop your project and provided some examples of contracts and transactions you can modify. We've also added some of the most common contracts, transactions and scripts but feel free to just delete what you don't need. 
 
