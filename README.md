@@ -11,6 +11,12 @@
 | IncrementFi Price Oracle | A.866a9f1e81898147.PublicPriceOracle | https://testnet.flowdiver.io/contract/A.866a9f1e81898147.PublicPriceOracle |
 | Options (v1) | A.866a9f1e81898147.Options | https://testnet.flowdiver.io/contract/A.866a9f1e81898147.Options |
 
+To deploy locally:
+- Populate `flow.json` with accounts addresses. Here is a great tutorial on creating testnet accounts [MLH Getting Started with Flow](https://mlh.github.io/Getting-started-with-Flow/)
+- Run in root, `flow emulator`
+- Open another terminal in root and run `flow dev --network testnet`
+- Open another terminal in `/web` and run `npm run dev`
+- Change cadence scripts and transactions so that `0xAddress` points to the deploy addresses
 
 ### 👋 Welcome Flow Developer!
 Welcome to your new Flow project. We've created the basic folder structure you will need to develop your project and provided some examples of contracts and transactions you can modify. We've also added some of the most common contracts, transactions and scripts but feel free to just delete what you don't need. 
